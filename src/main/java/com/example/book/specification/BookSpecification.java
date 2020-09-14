@@ -9,37 +9,25 @@ import java.util.Collection;
 
 @Component
 public class BookSpecification {
-    public static Specification<Book> isName(String name) {
-            if(name == null) {
-                return null;
-            }
+    public Specification<Book> isName(String name) {
             return (root, query, cb) -> {
                 return cb.equal(root.get("name").as(String.class), name);
             };
     }
 
-    public static Specification<Book> isEdition(Integer edition) {
-        if(edition == null) {
-            return null;
-        }
+    public Specification<Book> isEdition(Integer edition) {
         return (root, query, cb) -> {
             return cb.equal(root.get("edition").as(Integer.class), edition);
         };
     }
 
-    public static Specification<Book> isYear(Integer year) {
-        if(year == null) {
-            return null;
-        }
+    public Specification<Book> isYear(Integer year) {
         return (root, query, cb) -> {
             return cb.equal(root.get("publication_year").as(Integer.class), year);
         };
     }
 
-    public static Specification<Book> isAuthor(String givenAuthorName) {
-        if(givenAuthorName == null) {
-            return null;
-        }
+    public Specification<Book> isAuthor(String givenAuthorName) {
         return (root, query, cb) -> {
             final Path<Collection<Book>> authors = root.join("authors");
             final Path<String> authorName = authors.get("name");

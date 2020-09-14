@@ -34,16 +34,17 @@ public class BookController {
     private final BookRepository bookRepository;
     private final AuthorRepository authorRepository;
     private final NullAwareBeanUtilsBean nullAwareBeanUtils;
+    private final BookSpecification bookSpecification;
 
     @GetMapping("")
     public ResponseEntity<List<Book>> getAllBooks(@RequestParam(required = false) String name,
                                                   @RequestParam(required = false) Integer edition,
                                                   @RequestParam(required = false) Integer year,
                                                   @RequestParam(required = false) String author){
-            Specification<Book> specification = Specification.where(BookSpecification.isName(name))
-                .and(BookSpecification.isEdition(edition))
-                .and(BookSpecification.isYear(year))
-                .and(BookSpecification.isAuthor(author));
+            Specification<Book> specification = Specification.where(bookSpecification.isName(name))
+                .and(bookSpecification.isEdition(edition))
+                .and(bookSpecification.isYear(year))
+                .and(bookSpecification.isAuthor(author));
 
             List<Book> books  = bookRepository.findAll(specification);
             return new ResponseEntity<>(books, HttpStatus.OK);
