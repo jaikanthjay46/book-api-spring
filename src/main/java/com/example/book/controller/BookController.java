@@ -40,22 +40,10 @@ public class BookController {
                                                   @RequestParam(required = false) Integer edition,
                                                   @RequestParam(required = false) Integer year,
                                                   @RequestParam(required = false) String author){
-            Specification<Book> specification = Specification.where(null);
-            if(name != null) {
-                specification.and(BookSpecification.isName(name));
-            }
-
-            if(edition != null) {
-                specification.and(BookSpecification.isEdition(edition));
-            }
-
-            if(year != null) {
-                specification.and(BookSpecification.isYear(year));
-            }
-
-            if(author != null) {
-                specification.and(BookSpecification.isAuthor(author));
-            }
+            Specification<Book> specification = Specification.where(BookSpecification.isName(name))
+                .and(BookSpecification.isEdition(edition))
+                .and(BookSpecification.isYear(year))
+                .and(BookSpecification.isAuthor(author));
 
             List<Book> books  = bookRepository.findAll(specification);
             return new ResponseEntity<>(books, HttpStatus.OK);
