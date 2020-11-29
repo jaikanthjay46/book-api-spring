@@ -1,6 +1,6 @@
 <h1 align="center">Spring Boot Demo with Books REST API</h1>
 
-<p>
+<p align="center">
   <a href="https://sonarcloud.io/dashboard?id=jaikanthjay46_book-api-spring" target="_blank">
     <img alt="Sonar: Coverage" src="https://sonarcloud.io/api/project_badges/measure?project=jaikanthjay46_book-api-spring&metric=coverage" />
   </a>
@@ -12,7 +12,7 @@
   </a>
 </p>
 
-<p>
+<p align="center">
   <a href="#" target="_blank">
     <img alt="License: Jaikanth J" src="https://img.shields.io/badge/License-Jaikanth J-yellow.svg" />
   </a>
