@@ -1,4 +1,17 @@
-<h1 align="center">Welcome to Spring Boot Demo with Books REST API 👋</h1>
+<h1 align="center">Spring Boot Demo with Books REST API</h1>
+
+<p>
+  <a href="https://sonarcloud.io/dashboard?id=jaikanthjay46_book-api-spring" target="_blank">
+    <img alt="Sonar: Coverage" src="https://sonarcloud.io/api/project_badges/measure?project=jaikanthjay46_book-api-spring&metric=coverage" />
+  </a>
+  <a href="https://sonarcloud.io/dashboard?id=jaikanthjay46_book-api-spring" target="_blank">
+    <img alt="Sonar: Maintain" src="https://sonarcloud.io/api/project_badges/measure?project=jaikanthjay46_book-api-spring&metric=sqale_rating" />
+  </a>
+  <a href="https://sonarcloud.io/dashboard?id=jaikanthjay46_book-api-spring" target="_blank">
+    <img alt="Sonar: Dupes" src="https://sonarcloud.io/api/project_badges/measure?project=jaikanthjay46_book-api-spring&metric=duplicated_lines_density" />
+  </a>
+</p>
+
 <p>
   <a href="#" target="_blank">
     <img alt="License: Jaikanth J" src="https://img.shields.io/badge/License-Jaikanth J-yellow.svg" />
