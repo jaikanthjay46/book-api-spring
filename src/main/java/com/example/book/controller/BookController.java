@@ -1,7 +1,7 @@
 package com.example.book.controller;
 
-import com.example.book.dto.Author;
-import com.example.book.dto.Book;
+import com.example.book.entities.Author;
+import com.example.book.entities.Book;
 import com.example.book.repositories.AuthorRepository;
 import com.example.book.repositories.BookRepository;
 import com.example.book.specification.BookSpecification;

@@ -1,6 +1,6 @@
 package com.example.book;
 
-import com.example.book.dto.Author;
+import com.example.book.entities.Author;
 import com.example.book.repositories.AuthorRepository;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;

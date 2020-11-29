@@ -1,6 +1,6 @@
 package com.example.book.controller;
 
-import com.example.book.dto.Author;
+import com.example.book.entities.Author;
 import com.example.book.repositories.AuthorRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
