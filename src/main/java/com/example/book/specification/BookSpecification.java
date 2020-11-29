@@ -1,6 +1,6 @@
 package com.example.book.specification;
 
-import com.example.book.dto.Book;
+import com.example.book.entities.Book;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Component;
 

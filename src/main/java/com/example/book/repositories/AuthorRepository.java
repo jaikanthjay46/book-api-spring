@@ -1,6 +1,6 @@
 package com.example.book.repositories;
 
-import com.example.book.dto.Author;
+import com.example.book.entities.Author;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.CrudRepository;
